@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="370px" />
+
+        <TableLayout
+            android:id="@+id/tail"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@android:id/tabcontent"
+            android:background="@drawable/bar_control_320x480" >
+
+            <TableRow
+                android:id="@+id/button_control"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="#00000000" >
+
+                <ImageButton
+                    android:id="@+id/hot_music"
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="4px"
+                    android:background="#00000000"
+                    android:src="@drawable/tab_nhac_hot_320x480" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/category"
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="5px"
+                    android:background="#00000000"
+                    android:src="@drawable/tab_the_loai_320x480" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/radio"
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="5px"
+                    android:background="#00000000"
+                    android:src="@drawable/tab_radio_320x480" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/playlist"
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="5px"
+                    android:background="#00000000"
+                    android:src="@drawable/tab_playlist_320x480" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/other"
+                    android:layout_width="50px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginTop="5px"
+                    android:background="#00000000"
+                    android:src="@drawable/tab_khac_320x480" >
+                </ImageButton>
+            </TableRow>
+        </TableLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</TabHost>

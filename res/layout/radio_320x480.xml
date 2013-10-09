@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:id="@+id/container" android:layout_height="370px" android:background="@drawable/body_background_320x480">
+    <ListView android:layout_width="match_parent" android:layout_height="370dip" android:id="@+id/list_channel" android:background="#00000000"></ListView>
+    <com.ppclink.vietpop.adv.AdvViewGroup android:layout_height="wrap_content" android:id="@+id/advViewGroup1" android:layout_alignParentBottom="true" android:layout_width="wrap_content" android:visibility="gone"></com.ppclink.vietpop.adv.AdvViewGroup>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:gravity="top" android:layout_height="50px">
+    <TableLayout android:layout_width="match_parent" android:id="@+id/radio_browser1_320x480" android:layout_height="50px">
+        <TableRow android:id="@+id/row">
+            <ImageButton android:layout_width="wrap_content" android:id="@+id/icon1" android:layout_gravity="center_vertical" android:layout_height="50px" android:layout_marginLeft="8px" android:background="#00000000"></ImageButton>
+            <TableLayout android:layout_gravity="center_vertical" android:id="@+id/content" android:layout_height="fill_parent" android:layout_marginLeft="8px" android:layout_width="260px">
+                <TextView android:text="TextView" android:id="@+id/text_topic" android:layout_height="fill_parent" android:gravity="center_vertical" android:textColor="#ffffffff" android:layout_width="match_parent" android:background="#00000000"></TextView>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>	 		   
+</RelativeLayout>
