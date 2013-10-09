@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<channels>
+	<channel>
+		<id>0</id>
+		<name>VOV1</name>
+		<description>Hệ thời sự chính trị tổng hợp</description>
+		<link>http://localhost:8888/vov1</link>
+		<host>123.30.50.46</host>
+		<url>rtmp://123.30.50.46/live</url>
+		<playpath>vov1</playpath>
+		<app>live</app>
+		<port>8080</port>
+		<iconname>vov1</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>1</id>
+		<name>VOV2</name>
+		<description>Hệ văn hóa và đời sống xã hội</description>
+		<link>http://localhost:8888/vov2</link>
+		<host>123.30.50.46</host>
+		<url>rtmp://123.30.50.46/live</url>
+		<playpath>vov2</playpath>
+		<app>live</app>
+		<port>8080</port>
+		<iconname>vov2</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>2</id>
+		<name>VOV3</name>
+		<description>Hệ âm nhạc thông tin giải trí</description>
+		<link>http://localhost:8888/vov3</link>
+		<host>123.30.50.46</host>
+		<url>rtmp://123.30.50.46/live</url>
+		<playpath>vov3</playpath>
+		<app>live</app>
+		<port>8080</port>
+		<iconname>vov3</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>3</id>
+		<name>VOV5</name>
+		<description>Kênh cho người Việt Nam ở nước ngoài</description>
+		<link>http://localhost:8888/vov5</link>
+		<host>123.30.50.46</host>
+		<url>rtmp://123.30.50.46/live</url>
+		<playpath>vov5</playpath>
+		<app>live</app>
+		<port>8080</port>
+		<iconname>vov5</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>4</id>
+		<name>VOVGT</name>
+		<description>Kênh thông tin giao thông Hà Nội</description>
+		<link>http://localhost:8888/vovgt</link>
+		<host>123.30.50.46</host>
+		<url>rtmp://123.30.50.46/live</url>
+		<playpath>vovgt</playpath>
+		<app>live</app>
+		<port>8080</port>
+		<iconname>vov_gthn</iconname>
+		<status>online</status>
+	</channel>		
+	
+	<channel>
+		<id>5</id>
+		<name>TNT</name>
+		<description>Tiếng nước tôi Radio</description>
+		<link>http://sc2.streamingchoice.com:4300</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>tnt</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>6</id>
+		<name>SGDALLAS</name>
+		<description>Saigon Dallas 890</description>
+		<link>http://shoutcastlive.com:8106</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>sgdalas</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>7</id>
+		<name>VNHN</name>
+		<description>Việt Nam hải ngoại</description>
+		<link>http://vpr.serverroom.us:7492</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>vnhn</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>8</id>
+		<name>VNJournal</name>
+		<description>Đài quốc tế Pháp</description>
+		<link>http://vietnamjournal.free.fr/VN_20110209.mp3</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>icon_left_320x480</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>9</id>
+		<name>RFI</name>
+		<description>RFI Monde (World)</description>
+		<link>http://mp3.live.tv-radio.com/rfimonde/all/rfimonde-64k.mp3</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>icon_left_320x480</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>10</id>
+		<name>RFI</name>
+		<description>RFI Musique du monde (World Music)</description>
+		<link>http://mp3.live.tv-radio.com/rfimusiquemonde/all/rfimusiquemonde-64k.mp3</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>icon_left_320x480</iconname>
+		<status>online</status>
+	</channel>
+	
+	<channel>
+		<id>11</id>
+		<name>RFI</name>
+		<description>RFI Multlingue 4</description>
+		<link>http://mp3.live.tv-radio.com/rfimultlingue4/all/rfimultlingue4.mp3</link>
+		<host></host>
+		<url></url>
+		<playpath></playpath>
+		<app></app>
+		<port></port>
+		<iconname>icon_left_320x480</iconname>
+		<status>online</status>
+	</channel>
+</channels>

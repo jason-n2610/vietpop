@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:id="@+id/container" android:layout_height="fill_parent" android:layout_gravity="center_vertical" android:background="@drawable/body_background_320x480">
+    <TableLayout android:layout_width="match_parent" android:background="#00000000" android:id="@+id/title" android:layout_height="60px" android:gravity="center_vertical|center">
+        <TableRow android:id="@+id/row" android:layout_height="match_parent" android:layout_width="match_parent" android:background="@drawable/background_nowplaying">
+            <ImageButton android:layout_gravity="center_vertical" android:background="#00000000" android:layout_width="wrap_content" android:src="@drawable/shuffle_320x480" android:layout_height="50px" android:layout_marginLeft="5px" android:id="@+id/shuffle"></ImageButton>
+            <TableLayout android:layout_height="wrap_content" android:background="#00000000" android:id="@+id/content" android:layout_marginLeft="6dp" android:gravity="center_vertical|center" android:layout_gravity="center_vertical|center" android:layout_width="220px">
+<!--                 <ViewFlipper android:id="@+id/viewFlipper1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#00000000"> -->
+<!--                 </ViewFlipper> -->
+                <TextView android:textSize="18px" android:background="#00000000" android:textColor="#ffffff" android:gravity="center_vertical|center" android:id="@+id/now_playing" android:layout_width="fill_parent" android:text="Now playing"></TextView>
+            </TableLayout>
+            <ImageButton android:background="#00000000" android:layout_width="wrap_content" android:layout_gravity="center_vertical|center" android:layout_height="50px" android:id="@+id/repeat" android:src="@drawable/repeat_320x480"></ImageButton>
+        </TableRow>
+    </TableLayout>
+    
+    <TableLayout
+    android:layout_below="@id/title"
+    android:id="@+id/seek_bar" android:gravity="center" android:layout_width="match_parent" android:background="@drawable/background_seekbar_320x480" android:layout_height="36px">
+        <TableRow android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/row">
+            <TextView android:layout_width="45px" 
+            android:layout_gravity="center_vertical" 
+            android:id="@+id/time_play" 
+            android:textColor="#000000" 
+            android:layout_height="wrap_content" android:layout_marginLeft="10px"></TextView>
+            
+            <SeekBar
+				android:id="@+id/seekBar1"
+				android:layout_width="205px"
+				android:layout_height="wrap_content"
+				android:thumb="@drawable/seek_thumb_normal"
+				android:progressDrawable="@drawable/seek_progress_clip"/>
+	<TextView android:id="@+id/time_remain" 
+	android:layout_width="45px"
+	android:layout_gravity="center_vertical"  
+	android:textColor="#000000" 
+	android:layout_marginLeft="8px" 
+	android:layout_height="wrap_content"></TextView>
+        </TableRow>
+    </TableLayout>
+    
+    
+    <TableLayout android:background="#00000000" android:id="@+id/gallery_view"
+    android:layout_width="match_parent" android:gravity="center_vertical|center" android:layout_below="@id/seek_bar" android:layout_height="188px">
+        <Gallery
+        android:gravity="center"
+        android:layout_width="wrap_content" android:background="#00000000" android:animationCache="true" android:id="@+id/gallery" android:layout_height="200px" android:layout_marginTop="40px"></Gallery>
+    </TableLayout>
+    
+    <TextView android:layout_height="wrap_content" android:textColor="#dddddd" android:layout_marginTop="3px" android:gravity="center_vertical|center" android:background="#00000000" android:id="@+id/text_artist" android:layout_width="fill_parent" android:text="Artist" android:layout_below="@id/gallery_view" android:singleLine="true" android:textSize="18px"></TextView>
+    <TextView android:layout_height="wrap_content" android:textColor="#dddddd" android:gravity="center_vertical|center" android:background="#00000000" android:layout_below="@id/text_artist" android:id="@+id/text_album" android:singleLine="true" android:layout_width="fill_parent" android:text="mp3.zing.vn" android:textSize="14px"></TextView>
+    <TextView android:layout_height="wrap_content" android:textColor="#dddddd" android:gravity="center_vertical|center" android:background="#00000000" android:layout_below="@id/text_album" android:id="@+id/song_number" android:singleLine="true" android:layout_width="fill_parent" android:text="00/00" android:textSize="14px"></TextView>
+     <com.ppclink.vietpop.adv.AdvViewGroup android:layout_height="50px" android:id="@+id/advViewGroup1"  
+     android:layout_below="@id/song_number"
+     android:layout_width="320px"></com.ppclink.vietpop.adv.AdvViewGroup>
+    <FrameLayout 
+	android:id = "@+id/frame_lyric"
+	android:layout_below="@id/seek_bar" android:layout_width="fill_parent" android:layout_height="300px" android:visibility="gone">
+    <com.ppclink.vietpop.lyric.LyricView
+			android:id = "@+id/lyricview"	
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" 
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true"/>
+        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/foreground_lyric_320x480"></ImageView>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tab_search_lyric_320x480" android:id="@+id/search_lyric" android:layout_gravity="bottom|right"></ImageView>
+    </FrameLayout>
+     
+     
+     
+     <TableLayout 
+	
+    android:id="@+id/tail" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:background="@drawable/bar_player_320x480" android:layout_height="60px">
+        <TableRow android:id="@+id/button_control" android:layout_height="wrap_content" android:layout_width="match_parent" android:background="#00000000">
+            <ImageButton android:background="#00000000" android:id="@+id/list" android:src="@drawable/tab_list_320x480" android:layout_height="50px" android:layout_width="50px" android:layout_marginLeft="6px" android:layout_marginTop="6px"></ImageButton>
+            <ImageButton android:background="#00000000" android:id="@+id/previous" android:src="@drawable/tab_previous_320x480" android:layout_height="50px" android:layout_marginLeft="8px" android:layout_width="50px" android:layout_marginTop="6px"></ImageButton>
+            <ImageButton android:id="@+id/play" android:background="#00000000" android:src="@drawable/tab_play_320x480" android:layout_height="50px" android:layout_width="50px" android:layout_marginLeft="23px" android:layout_marginTop="6px"></ImageButton>
+            <ImageButton android:layout_width="50px" android:layout_marginLeft="23px" android:src="@drawable/tab_pause_320x480" android:layout_marginTop="6px" android:background="#00000000" android:layout_height="50px" android:id="@+id/pause" android:visibility="gone"></ImageButton>
+            <ImageButton android:background="#00000000" android:id="@+id/next" android:src="@drawable/tab_next_320x480" android:layout_height="50px" android:layout_marginLeft="20px" android:layout_width="50px" android:layout_marginTop="6px"></ImageButton>
+            <ImageButton android:background="#00000000" android:id="@+id/show_lyric" android:src="@drawable/tab_karaoke_320x480" android:layout_height="50px" android:layout_marginLeft="10px" android:layout_width="50px" android:layout_marginTop="6px"></ImageButton>
+            <ImageButton android:layout_height="50px" android:background="#00000000" android:layout_marginTop="5px" android:src="@drawable/play_song_view_320x480" android:layout_marginLeft="7px" android:layout_width="50px" android:id="@+id/play_song" android:visibility="gone"></ImageButton>
+        </TableRow>
+    </TableLayout>
+    
+</RelativeLayout>

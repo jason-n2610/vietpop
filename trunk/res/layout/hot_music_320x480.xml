@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="370px"
+    android:background="@drawable/body_background_320x480"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:focusable="false" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/list_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:focusable="false" >
+    </ListView>
+
+    <com.ppclink.vietpop.adv.AdvViewGroup
+        android:id="@+id/advViewGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+    </com.ppclink.vietpop.adv.AdvViewGroup>
+
+</RelativeLayout>
